@@ -37,6 +37,27 @@
         p {
             margin: 5px 0 0;
         }
+        #content {
+            display: flex;
+            justify-content: space-between;
+            width: 70%;
+            margin: 20px;
+        }
+        .column {
+            flex: 1;
+        }
+        li {
+            border-bottom: 1px solid #ccc;
+        }
+
+        .profile-background {
+        background-image: url("back3.jpg");
+        background-size: cover;
+        background-position: center;
+        padding: 100px 0;
+        text-align: center;
+        color: white;
+        }
         .profile-img {
             border-radius: 50%;
             max-width: 150px;
@@ -135,6 +156,24 @@
 
     <section>
     <h1>𝐖𝐞𝐥𝐜𝐨𝐦𝐞 𝐭𝐨 𝐅𝐚𝐢𝐬𝐚𝐥'𝐬 𝐖𝐞𝐛𝐬𝐢𝐭𝐞</h1>
+    <div class="menu">
+    <div id="content">
+        <div class="column">
+            <ul>
+                <li><a href="#1" class="button">ᴄᴏɴᴛᴀᴄᴛ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ</a></li>
+                <li><a href="#2" class="button">ᴇᴅᴜᴄᴀᴛɪᴏɴ</a></li>
+                <li><a href="#3" class="button">ᴇxᴘᴇʀɪᴇɴᴄᴇ</a></li>
+            </ul>
+        </div>
+    
+        <div class="column">
+            <ul>
+                <li><a href="#4" class="button">ꜱᴋɪʟʟꜱ</a></li>
+                <li><a href="#5" class="button">​🇻​​🇮​​🇩​​🇪​​🇴​</a></li>
+                <li><a href="#6" class="button">​🇵​​🇭​​🇴​​🇹​​🇴​</a> <a href="#7" class="button">​🇵​​🇭​​🇴​​🇹​​🇴​</a></li>
+            </ul>
+        </div>
+    </div>
     
     <button id="playButton">𝗰𝗹𝗶𝗰𝗸 𝗵𝗲𝗿𝗲</button>
     </section>
@@ -151,8 +190,12 @@
         });
     </script>
     
+    
     <profile-img>
     <header>
+        <div class="profile-background">
+            <div class="container">
+              <div class="text-center">
         <img class="profile-img" src="profil.JPG" alt="Your Profile Image">
         <h1>𝐅𝐚𝐢𝐬𝐚𝐥 𝐬𝐡𝐨𝐝𝐢𝐪</h1>
         <p>𝘊𝘰𝘯𝘵𝘦𝘯𝘵 𝘊𝘳𝘦𝘢𝘵𝘰𝘳</p>
@@ -168,50 +211,51 @@
             <li><i class='fab fa-instagram' style='font-size:15px'></i>        𝘪𝘯𝘴𝘵𝘢𝘨𝘳𝘢𝘮   : <a href="https://www.instagram.com/fslsdq/">@fslsdq</a></li>
     </section>
 
-    <section>
-        <h2><i class="material-icons" style="font-size:24px">school</i> ᴇᴅᴜᴄᴀᴛɪᴏɴ</h2>
+<section>
+        <h2 id="2"><i class="material-icons" style="font-size:24px">school</i> ᴇᴅᴜᴄᴀᴛɪᴏɴ</h2>
         <div class="education">
-            <h3>𝘌𝘭𝘦𝘮𝘦𝘯𝘵𝘢𝘳𝘺 𝘴𝘤𝘩𝘰𝘰𝘭</h3>
+            <h3><li>𝘌𝘭𝘦𝘮𝘦𝘯𝘵𝘢𝘳𝘺 𝘴𝘤𝘩𝘰𝘰𝘭</li></h3>
             <p>SDN Cinanggung</p>
             <p>SDIT Badrussalam</p>
             <p>SDN Cinangka III</p>
         </div>
         <div class="education">
-            <h3>𝘑𝘶𝘯𝘪𝘰𝘳 𝘩𝘪𝘨𝘩 𝘴𝘤𝘩𝘰𝘰𝘭</h3>
+            <h3><li>𝘑𝘶𝘯𝘪𝘰𝘳 𝘩𝘪𝘨𝘩 𝘴𝘤𝘩𝘰𝘰𝘭</li></h3>
             <p>MTS Ibad Ar-Rahman</p>
         </div>
         <div class="education">
-            <h3>𝘚𝘦𝘯𝘪𝘰𝘳 𝘩𝘪𝘨𝘩 𝘴𝘤𝘩𝘰𝘰𝘭</h3>
+            <h3><li>𝘚𝘦𝘯𝘪𝘰𝘳 𝘩𝘪𝘨𝘩 𝘴𝘤𝘩𝘰𝘰𝘭</li></h3>
             <p>MA Ibad Ar-Rahman</p>
         </div>
         <div class="education">
-            <h3>𝘜𝘯𝘪𝘷𝘦𝘳𝘴𝘪𝘵𝘺</h3>
+            <h3><li>𝘜𝘯𝘪𝘷𝘦𝘳𝘴𝘪𝘵𝘺</li></h3>
             <p>PGRI Banten Polytechnic - Digital Business</p>
         </div>
     </section>
 
     <section>
-        <h2><i class="material-icons" style="font-size:20px">work</i> ᴇxᴘᴇʀɪᴇɴᴄᴇ</h2>
+        <h2 id="3"><i class="material-icons" style="font-size:20px">work</i> ᴇxᴘᴇʀɪᴇɴᴄᴇ</h2>
         <div class="experience">
-            <h3>𝘑𝘰𝘣 𝘛𝘪𝘵𝘭𝘦</h3>
+            <h3><li>𝘑𝘰𝘣 𝘛𝘪𝘵𝘭𝘦</ul></h3>
             <p>PT.Alam karya kahuripan - Marketing</p>
-            <ul>
-                <li>(creating content on Instagram, uploading products in online stores)</li>
-            </ul>
+                <ul>(creating content on Instagram, uploading products in online stores)</ul>
             <p>Arabic101 YT channel - Translator</p>
-            <ul>
-                <li>(create written animations, translate lessons into Indonesian)</li>
-            </ul>
+                <ul>(create written animations, translate lessons into Indonesian)</ul>
         </div>
     </section>
 
     <section>
-        <h2><i class="material-icons" style="font-size:20px">extension</i> ꜱᴋɪʟʟꜱ</h2>
-        <p class="skills">Photography, Videography | 75</p>
-        <p class="skills">Editing | 70</p>
-        <p class="skills">English | 80</p>
-        <p class="skills">Microsoft Word, Excel, Powerpoint | 75</p>
-        <p class="skills">Visual Studio Code | 80</p>
+        <h2 id="4"><i class="material-icons" style="font-size:20px">extension</i> ꜱᴋɪʟʟꜱ</h2>
+        <h3><li>𝘴𝘰𝘧𝘵 𝘴𝘬𝘪𝘭𝘭𝘴</ul></h3>
+            <p class="skills">Hardworking | 80</p>
+            <p class="skills">Creative | 75</p>
+            <p class="skills">English Language | 85</p>
+            <p class="skills">Teamwork | 80</p>
+        <h3><li>𝘩𝘢𝘳𝘥 𝘴𝘬𝘪𝘭𝘭𝘴</ul></h3>
+            <p class="skills">Photography, Videography | 75</p>
+            <p class="skills">Editing | 75</p>
+            <p class="skills">Microsoft Word, Excel, Powerpoint | 70</p>
+            <p class="skills">Visual Studio Code | 80</p>
     </section>
 
     <section>
