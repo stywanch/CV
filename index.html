@@ -305,6 +305,23 @@
     </section>
 </body>
 
+<script>
+!function(w, d, s, ...args){
+  var div = d.createElement('div');
+  div.id = 'aichatbot';
+  d.body.appendChild(div);
+  w.chatbotConfig = args;
+  var f = d.getElementsByTagName(s)[0],
+  j = d.createElement(s);
+  j.defer = true;
+  j.type = 'module';
+  j.src = 'https://aichatbot.sendbird.com/index.js';
+  f.parentNode.insertBefore(j, f);
+}(window, document, 'script', 'CB26595D-011F-4929-9F9D-345EA27D655B', 'on-yVAKcSSBtqVbT1WmH6', {
+  apiHost: 'https://api-cf-ap-5.sendbird.com',
+});
+</script>
+
     <footer>
         <p>&copy; ²⁰²³ ᶠᵃⁱˢᵃˡ ˢ ᴬˡˡ ʳⁱᵍʰᵗˢ ʳᵉˢᵉʳᵛᵉᵈ</p>
     </footer>
